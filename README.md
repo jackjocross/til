@@ -23,3 +23,4 @@ This syntax is much more concise and gives us a simple way to clean up code.
 #CSS
 * :nth-child(pattern): Pseudo class which applies to elements which are the nth child of their parent according to the pattern.  The pattern can simply be a number or can be more complex such as "n + 2".  The childrens index starts at 1.  Usage:
     * :nth-child(n + 2):nth-child(-n + 3) - Selects all elements from the second up until the third to last.
+* pointer-events: none | visible | painted...: Property which specifies when a particular element should respond to mouse events.  Setting to "none" comes in handy when you have an element which does not have any click functionality overlapping an element which does.  It will allow the underlying element to handle the click even if the overlapping element is clicked.
