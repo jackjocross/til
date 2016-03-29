@@ -13,6 +13,12 @@ Keeping track of programming knowledge that I pick up each day.
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
     * myFunction.bind(null, "myParam")
       myFunction();
+* String.slice(start, stop) vs. String.substring(start, stop):
+    * If start > stop, substring will swap the two values where as slice will not.
+    * If start or stop is negative or NaN in substring it will be treated as zero.
+    * If start is negative in slice, it will start from the end of the string.
+    * If stop is negative in slice, it will set stop to (string.length - 1) - Math.abs(stop).
+
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
     let {prop} = obj;
