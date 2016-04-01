@@ -8,6 +8,7 @@ Keeping track of programming knowledge that I pick up each day.
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
     * <div ng-app="myApp" ng-strict-di></div>
     * angular.bootstrap(elementToAttachTo, "myApp", {strictDi: true})
+* angular.bootstrap(elementToAttachTo, "myApp"): Used to manually bootstrap Angular applications without explicitly attaching ng-app to any DOM element.  It can also be used to declare to ng-apps on one page.  There can only be one explicit ng-app attached to a DOM element on a page but you can manually bootstrap an Angular app to any number of elements.
 
 #JavaScript
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
