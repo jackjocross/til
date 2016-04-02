@@ -4,6 +4,8 @@ Keeping track of programming knowledge that I pick up each day.
 * git checkout -: Checkout the last branch you had checked out.
 * git fetch, git checkout <branch name>: Checkout a remote branch in your repository.
 * git reset --hard HEAD: throw away any changes you have made and reset to the head of the current branch you are on.
+* git push origin --delete <branch name>: Delete a remote git branch.
+* git remote prune origin: Prune stale, unreachable branches from your local repo.
 
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
