@@ -19,6 +19,7 @@ Keeping track of programming knowledge that I pick up each day.
     * If start or stop is negative or NaN in substring it will be treated as zero.
     * If start is negative in slice, it will start from the end of the string.
     * If stop is negative in slice, it will set stop to (string.length - 1) - Math.abs(stop).
+* Object.assign(target, ...sources): Used to copy the values of all own enumerable properties from the sources objects to the target, returns the new target object.  Uses the Get of sources and Put of target.  
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
