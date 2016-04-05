@@ -19,7 +19,7 @@ Keeping track of programming knowledge that I pick up each day.
     * If start or stop is negative or NaN in substring it will be treated as zero.
     * If start is negative in slice, it will start from the end of the string.
     * If stop is negative in slice, it will set stop to (string.length - 1) - Math.abs(stop).
-* Object.assign(target, ...sources): Used to copy the values of all own enumerable properties from the sources objects to the target, returns the new target object.  Uses the Get of sources and Put of target.  
+* Array.map(fn): Applies fn to each element of the array, returns the new array with fn(Array[n]) for each element n in the original array.
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
@@ -27,6 +27,7 @@ Keeping track of programming knowledge that I pick up each day.
 And now prop will be equql to the prop property of object.  We can also do this with more than one property at once like so:
     let {prop1, prop2, prop3} = obj.
 This syntax is much more concise and gives us a simple way to clean up code.
+* Object.assign(target, ...sources): Used to copy the values of all own enumerable properties from the sources objects to the target, returns the new target object.  Uses the Get of sources and Put of target. 
 
 #CSS
 * :nth-child(pattern): Pseudo class which applies to elements which are the nth child of their parent according to the pattern.  The pattern can simply be a number or can be more complex such as "n + 2".  The childrens index starts at 1.  Usage:
