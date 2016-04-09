@@ -3,6 +3,7 @@ Keeping track of programming knowledge that I pick up each day.
 #Git
 * git checkout -: Checkout the last branch you had checked out.
 * git fetch, git checkout <branch name>: Checkout a remote branch in your repository.
+* Git Hooks: Git hooks allow you to run a script before or after specific git events.  Some events you can hook into are post-update, pre-commit, pre-push, pre-rebase, and pre-applypatch.  Hooks are stored in the .git/hooks folder of your local repo and are not tracked by git.  In addition to these local hooks, there are also the pre-receive, update, and post-receive hooks which live on the server.
 
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
