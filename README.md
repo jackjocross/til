@@ -37,3 +37,11 @@ This syntax is much more concise and gives us a simple way to clean up code.
 * :nth-child(pattern): Pseudo class which applies to elements which are the nth child of their parent according to the pattern.  The pattern can simply be a number or can be more complex such as "n + 2".  The childrens index starts at 1.  Usage:
     * :nth-child(n + 2):nth-child(-n + 3) - Selects all elements from the second up until the third to last.
 * pointer-events: none | visible | painted...: Property which specifies when a particular element should respond to mouse events.  Setting to "none" comes in handy when you have an element which does not have any click functionality overlapping an element which does.  It will allow the underlying element to handle the click even if the overlapping element is clicked.
+
+#Regular Expressions
+Regular expressions can be used to verify that strings match a certain pattern.  One useful application is input validation.  
+    * ?: Denotes that the previous expression is optional
+    * \character: represents the literal of the character
+    * {n, k}: Denotes that between n and k repetitions of the previous expression are allowed
+    * [1-9]: Any number between 1 and 9 is allowed
+    * | : Marks alternate possibilities that are allowed
