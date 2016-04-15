@@ -21,6 +21,7 @@ Keeping track of programming knowledge that I pick up each day.
     * If start is negative in slice, it will start from the end of the string.
     * If stop is negative in slice, it will set stop to (string.length - 1) - Math.abs(stop).
 * Array.map(fn): Applies fn to each element of the array, returns the new array with fn(Array[n]) for each element n in the original array.
+* Array.filter(fn): Runs fn on each argument in the array, removing the elements for which fn(array[n]) returns false and creating a new array.
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
