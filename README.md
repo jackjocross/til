@@ -7,7 +7,7 @@ Keeping track of programming knowledge that I pick up each day.
 * git push origin --delete <branch name>: Delete a remote git branch.
 * git remote prune origin: Prune stale, unreachable branches from your local repo.
 * Git Hooks: Git hooks allow you to run a script before or after specific git events.  Some events you can hook into are post-update, pre-commit, pre-push, pre-rebase, and pre-applypatch.  Hooks are stored in the .git/hooks folder of your local repo and are not tracked by git.  In addition to these local hooks, there are also the pre-receive, update, and post-receive hooks which live on the server.
-=
+
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
     * <div ng-app="myApp" ng-strict-di></div>
@@ -44,7 +44,7 @@ This syntax is much more concise and gives us a simple way to clean up code.
 * pointer-events: none | visible | painted...: Property which specifies when a particular element should respond to mouse events.  Setting to "none" comes in handy when you have an element which does not have any click functionality overlapping an element which does.  It will allow the underlying element to handle the click even if the overlapping element is clicked.
 
 #Regular Expressions
-###Regular expressions can be used to verify that strings match a certain pattern.  One useful application is input validation.  
+####Regular expressions can be used to verify that strings match a certain pattern.  One useful application is input validation.  
 * ?: Denotes that the previous expression is optional
 * \character: represents the literal of the character
 * {n, k}: Denotes that between n and k repetitions of the previous expression are allowed
