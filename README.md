@@ -26,6 +26,8 @@ Keeping track of programming knowledge that I pick up each day.
 And now prop will be equql to the prop property of object.  We can also do this with more than one property at once like so:
     let {prop1, prop2, prop3} = obj.
 This syntax is much more concise and gives us a simple way to clean up code.
+* let: Variables declared with let are bracket scoped as opposed to variables declared with var which are functionally scoped.
+* const: Variables declared with const are also bracket scoped but in addition they can only be written to once otherwise they will throw an error.
 
 #CSS
 * :nth-child(pattern): Pseudo class which applies to elements which are the nth child of their parent according to the pattern.  The pattern can simply be a number or can be more complex such as "n + 2".  The childrens index starts at 1.  Usage:
