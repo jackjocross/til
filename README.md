@@ -7,13 +7,13 @@ Keeping track of programming knowledge that I pick up each day.
 * git push origin --delete <branch name>: Delete a remote git branch.
 * git remote prune origin: Prune stale, unreachable branches from your local repo.
 * Git Hooks: Git hooks allow you to run a script before or after specific git events.  Some events you can hook into are post-update, pre-commit, pre-push, pre-rebase, and pre-applypatch.  Hooks are stored in the .git/hooks folder of your local repo and are not tracked by git.  In addition to these local hooks, there are also the pre-receive, update, and post-receive hooks which live on the server.
+* git rebase -i ~HEAD(x): Can be used to squash the last x commits together into one.  This is useful if you have many commits on a certain branch but want to make your history more concise.  Squashing commits will combine the changes from several commits into one to keep your history readable.
 
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
     * <div ng-app="myApp" ng-strict-di></div>
     * angular.bootstrap(elementToAttachTo, "myApp", {strictDi: true})
 * angular.bootstrap(elementToAttachTo, "myApp"): Used to manually bootstrap Angular applications without explicitly attaching ng-app to any DOM element.  It can also be used to declare two ng-apps on one page.  There can only be one explicit ng-app attached to a DOM element on a page but you can manually bootstrap an Angular app to any number of elements.
-
 
 #JavaScript
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
