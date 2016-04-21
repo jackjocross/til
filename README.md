@@ -30,6 +30,7 @@ Keeping track of programming knowledge that I pick up each day.
     * If stop is negative in slice, it will set stop to (string.length - 1) - Math.abs(stop).
 * Array.map(fn): Applies fn to each element of the array, returns the new array with fn(Array[n]) for each element n in the original array.
 * Array.filter(fn): Runs fn on each argument in the array, removing the elements for which fn(array[n]) returns false and creating a new array.
+* Truthy vs. falsey: Javascript expressions evaluate to truthy or falsey which can then be used to determine the branch taken in the code.  Since there are only six falsey values in Javascript (undefined, null, NaN, 0, "", and false) the best way to test for truthiness is to test for not falseyness.  Objects always evaluate to truthy so you have to be careful for odd examples like 'new Number(0)' and 'new Boolean(false)' which both evaluate to truthy.
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
