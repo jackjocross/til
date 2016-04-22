@@ -18,6 +18,7 @@ Keeping track of programming knowledge that I pick up each day.
     * <div ng-app="myApp" ng-strict-di></div>
     * angular.bootstrap(elementToAttachTo, "myApp", {strictDi: true})
 * angular.bootstrap(elementToAttachTo, "myApp"): Used to manually bootstrap Angular applications without explicitly attaching ng-app to any DOM element.  It can also be used to declare two ng-apps on one page.  There can only be one explicit ng-app attached to a DOM element on a page but you can manually bootstrap an Angular app to any number of elements.
+* $emit() vs. $broadcast(): Emit and broadcast are the two ways you can fire events in Angular.  The difference is that emit will only notify $rootScope listeners while broadcast will start by notifying $rootScope listeners and fanning the event out to all of the children of $rootScope.  This makes emit a more efficient choice in some cases.
 
 #JavaScript
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
