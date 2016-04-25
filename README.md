@@ -45,6 +45,11 @@ This syntax is much more concise and gives us a simple way to clean up code.
 * Template strings: 'Hello ${worldVar}'.  The variable or expression inside ${} will be replaced with the result of the toString() method called on it.
 * Mulitline Strings: Using backtick string notation, ES6 supports multiline strings which will evaluate to include the newline character and any extra tabbing.
 * Arrow functions: (input) => { //code in here }.  A concise way to represent functions, especially when used inline or in combination with map, filter, reduce.  Arrow functions also share their this with their parent.
+* for-of loop: The for of loop is new to Javascript in ES6 and loops over an iterable assigning each enumerated item while looping.  You can convert data structures to iterablea using the entries(), keys(), or values() functions.  Example:
+    let x = [1, 2, 3];
+    for (let item of x.entries()) {
+        console.log(item)
+    }
 
 #CSS
 * :nth-child(pattern): Pseudo class which applies to elements which are the nth child of their parent according to the pattern.  The pattern can simply be a number or can be more complex such as "n + 2".  The childrens index starts at 1.  Usage:
