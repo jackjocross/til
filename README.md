@@ -12,6 +12,7 @@ Keeping track of programming knowledge that I pick up each day.
     * filter=myFilterFunc, where myFilterFunc handles the clean and/or smudge functions
     * merge=myMergeFunc, where my merge specifies how to merge the file such as taking only ours changes.
     * -diff (binary diff flag)
+* Git config: there are three places that git will look for a config file, ~/.gitconfig, $GIT_DIR/config, and $(prefix)/git/config.  The order of precedence goes from global to local so the config in your $GIT_DIR will take the highes precedence.  Git config files are not in a location that can be tracked and used automatically, this is for security reasons.  Each user of a repo will have to manually setup their config file or reference an example config that is tracked.
 
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
