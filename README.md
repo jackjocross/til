@@ -12,7 +12,7 @@ Keeping track of programming knowledge that I pick up each day.
     * filter=myFilterFunc, where myFilterFunc handles the clean and/or smudge functions
     * merge=myMergeFunc, where my merge specifies how to merge the file such as taking only ours changes.
     * -diff (binary diff flag)
-* Git config: there are three places that git will look for a config file, ~/.gitconfig, $GIT_DIR/config, and $(prefix)/git/config.  The order of precedence goes from global to local so the config in your $GIT_DIR will take the highes precedence.  Git config files are not in a location that can be tracked and used automatically, this is for security reasons.  Each user of a repo will have to manually setup their config file or reference an example config that is tracked.
+* Git config: there are three places that git will look for a config file, ~/.gitconfig, $GIT_DIR/config, and $(prefix)/git/config.  The order of precedence goes from global to local so the config in your $GIT_DIR will take the highest precedence.  Git config files are not in a location that can be tracked and used automatically, this is for security reasons.  Each user of a repo will have to manually setup their config file or reference an example config that is tracked.
 
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
@@ -39,7 +39,8 @@ Keeping track of programming knowledge that I pick up each day.
     let {prop} = obj;
 And now prop will be equql to the prop property of object.  We can also do this with more than one property at once like so:
     let {prop1, prop2, prop3} = obj.
-This syntax is much more concise and gives us a simple way to clean up code.
+This syntax is much more concise and gives us a simple way to clean up code.  Object destructuring can also take a default argument in case the value is undefined on the object:
+    let {prop1 = 10} = obj
 * let: Variables declared with let are bracket scoped as opposed to variables declared with var which are functionally scoped.
 * const: Variables declared with const are also bracket scoped but in addition they can only be written to once otherwise they will throw an error.
 * Object.assign(target, ...sources): Used to copy the values of all own enumerable properties from the sources objects to the target, returns the new target object.  Uses the Get of sources and Put of target. 
