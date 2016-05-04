@@ -21,6 +21,9 @@ Keeping track of programming knowledge that I pick up each day.
 * angular.bootstrap(elementToAttachTo, "myApp"): Used to manually bootstrap Angular applications without explicitly attaching ng-app to any DOM element.  It can also be used to declare two ng-apps on one page.  There can only be one explicit ng-app attached to a DOM element on a page but you can manually bootstrap an Angular app to any number of elements.
 * $emit() vs. $broadcast(): Emit and broadcast are the two ways you can fire events in Angular.  The difference is that emit will only notify $rootScope listeners while broadcast will start by notifying $rootScope listeners and fanning the event out to all of the children of $rootScope.  This makes emit a more efficient choice in some cases.
 
+#React
+*this.setState(stateObj): Used to update the state of a component.  This will trigger a render() which will then update the display of the component if there are differences between the DOM and shadow DOM.
+
 #JavaScript
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
     * myFunction.bind(null, "myParam")
@@ -69,3 +72,6 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
 * {n, k}: Denotes that between n and k repetitions of the previous expression are allowed
 * [1-9]: Any number between 1 and 9 is allowed
 * | : Marks alternate possibilities that are allowed
+
+#Chrome Dev Tools
+*Blackboxing: If you navigate to Dev Tools > Settings > Blackboxing you will be able to add URI patterns for files to be blackboxed.  This will prevent chrome from outputting information about the internals of the file.  One use case is if you have a custom logger and all of your logging line numbers are listed as coming from inside the logger.  If you blackbox the logger script you will see the line numbers displayed as what line the custom logger was cqlled from, which is usually more useful.
