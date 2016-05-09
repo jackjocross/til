@@ -65,6 +65,9 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
         height: calc(20% + 10px);
     }
 
+#HTML
+* script - async and defer:  By default, the DOM parser will load script tags synchronously.  This means that if you have a script tag that takes abnormally long to fetch, the rest of the page that comes after your script tag will not load until the tag is fetched and parsed.  Adding async to the script tag will allow the parser to continue parsing the rest of the page and handle the script tag once it is fetched.  The defer tag will also allow the page to continue parsing and then will process the script once the DOM parsing is completed.  However, if you have a document.write call inside the loading script, the page could render incorrectly if you use async or defer.
+
 #Regular Expressions
 ####Regular expressions can be used to verify that strings match a certain pattern.  One useful application is input validation.  
 * ?: Denotes that the previous expression is optional
