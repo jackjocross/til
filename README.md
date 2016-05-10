@@ -56,6 +56,9 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
         console.log(item)
     }
 
+#NPM
+*shrinkwrap: Run using "npm shrinkwrap --dev".  This will create a npm-shrinkwrap.json file which will be used to resolve all of the npm dependencies and sub-dependencies in your package.json.  This can prevent unwanted and breaking updates to packages that can come through the use of the ~, ^, and * modifiers in your package.json and the package.json of any of your dependencies.  
+
 #CSS
 * :nth-child(pattern): Pseudo class which applies to elements which are the nth child of their parent according to the pattern.  The pattern can simply be a number or can be more complex such as "n + 2".  The childrens index starts at 1.  Usage:
     * :nth-child(n + 2):nth-child(-n + 3) - Selects all elements from the second up until the third to last.
