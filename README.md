@@ -67,6 +67,7 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
     .class-name { 
         height: calc(20% + 10px);
     }
+* css-modules: This npm package can be used to create locally scoped css and remove the need for systems like BEM that were needed to overcome the difficulties of CSS being globally scoped.  A set of styles can be included in your JavaScript component using "let styles = import './mystyles.css';".  Then in your tenplates the CSS class can be injected using "styles.myClassName".  css-modules will generate a unique class name for your component that will prevent naming conflicts.
 
 #HTML
 * script - async and defer:  By default, the DOM parser will load script tags synchronously.  This means that if you have a script tag that takes abnormally long to fetch, the rest of the page that comes after your script tag will not load until the tag is fetched and parsed.  Adding async to the script tag will allow the parser to continue parsing the rest of the page and handle the script tag once it is fetched.  The defer tag will also allow the page to continue parsing and then will process the script once the DOM parsing is completed.  However, if you have a document.write call inside the loading script, the page could render incorrectly if you use async or defer.
