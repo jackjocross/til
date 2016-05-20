@@ -88,3 +88,7 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
 
 #Chrome Dev Tools
 *Blackboxing: If you navigate to Dev Tools > Settings > Blackboxing you will be able to add URI patterns for files to be blackboxed.  This will prevent chrome from outputting information about the internals of the file.  One use case is if you have a custom logger and all of your logging line numbers are listed as coming from inside the logger.  If you blackbox the logger script you will see the line numbers displayed as what line the custom logger was cqlled from, which is usually more useful.
+
+#Shell
+* alias commands: If you have a long command that you type repeatedly you can create a shortcut by adding an alias to your shell configuration file (e.g. ~/.zshrc).  Example:
+    alias hr="git reset --hard head"
