@@ -22,7 +22,10 @@ Keeping track of programming knowledge that I pick up each day.
 * $emit() vs. $broadcast(): Emit and broadcast are the two ways you can fire events in Angular.  The difference is that emit will only notify $rootScope listeners while broadcast will start by notifying $rootScope listeners and fanning the event out to all of the children of $rootScope.  This makes emit a more efficient choice in some cases.
 
 #React
-*this.setState(stateObj): Used to update the state of a component.  This will trigger a render() which will then update the display of the component if there are differences between the DOM and shadow DOM.
+* this.setState(stateObj): Used to update the state of a component.  This will trigger a render() which will then update the display of the component if there are differences between the DOM and shadow DOM.
+
+#Webpack
+* file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
 
 #JavaScript
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
