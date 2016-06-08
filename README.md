@@ -24,6 +24,14 @@ Keeping track of programming knowledge that I pick up each day.
 
 #React
 * this.setState(stateObj): Used to update the state of a component.  This will trigger a render() which will then update the display of the component if there are differences between the DOM and shadow DOM.
+* propTypes: React propTypes allow you to do some amount of type checking in your application.  propTypes will define what type of variable your component is expecting, if it is required or not, and will throw an error if the conditions are not met.  Example:
+    React.createClass({
+        propTypes: {
+            prop1: React.propTypes.array,
+            prop2: React.propTypes.bool.isRequired,
+            prop3: React.proptypes.node
+        }
+    });
 
 #Webpack
 * file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
