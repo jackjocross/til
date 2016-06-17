@@ -32,6 +32,7 @@ Keeping track of programming knowledge that I pick up each day.
             prop3: React.proptypes.node
         }
     });
+* defaultProps: Allow you to declare default values for your component properties in case none are passed in.
 
 #Webpack
 * file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
