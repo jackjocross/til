@@ -101,6 +101,7 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
 #HTML
 * script - async and defer:  By default, the DOM parser will load script tags synchronously.  This means that if you have a script tag that takes abnormally long to fetch, the rest of the page that comes after your script tag will not load until the tag is fetched and parsed.  Adding async to the script tag will allow the parser to continue parsing the rest of the page and handle the script tag once it is fetched.  The defer tag will also allow the page to continue parsing and then will process the script once the DOM parsing is completed.  However, if you have a document.write call inside the loading script, the page could render incorrectly if you use async or defer.
 * disable: This tag can be added to an input to prevent it from being accessed or selected.  One example is when using placeholder text for a <select> element, adding disabled to the placeholder <option> will prevent it from being selected as an actual value.
+* target: For <a> elements you can specify that the link opens in a new tab by adding a target="_blank" attribute.
 
 #Regular Expressions
 ####Regular expressions can be used to verify that strings match a certain pattern.  One useful application is input validation.  
