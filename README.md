@@ -58,6 +58,7 @@ Keeping track of programming knowledge that I pick up each day.
     let nodeToRemove = document.getElementById('myId');
     nodeToRemove.parentNode.removeChild(nodeToRemove)
 * sparse vs. dense arrays: Sparse arrays are arrays where some of the items in the array do not exist, eg. [1, , 2] or [, , ,].  Sparse arrays can be creared with the array constructor Array(3) and the nonexistent items are not iterable.  Dense arrays are arrays where all of the items exist eg. [1, 2, 3].  All of the items in a dense array are iterable.
+* Object.defineProperty(obj, prop, descriptor): This method can be used to define properties on the obj passed in which have specific characteristics according to the descriptor object.  For instance, passing in the descriptor {writable: false} will create a read-only property on the object.
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
