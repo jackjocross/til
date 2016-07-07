@@ -23,6 +23,9 @@ Keeping track of programming knowledge that I pick up each day.
 * $emit() vs. $broadcast(): Emit and broadcast are the two ways you can fire events in Angular.  The difference is that emit will only notify $rootScope listeners while broadcast will start by notifying $rootScope listeners and fanning the event out to all of the children of $rootScope.  This makes emit a more efficient choice in some cases.
 * $q.all([promise1, promise2]): Using the $q module you can wait on multiple promises to return before .then() is called.  The argument to the .then() function will be an array of responses from the promises.
 * Transclude: Transclusion in Angular can be used to prevent a directive from completely replacing it's inner HTML.  By adding transclude: true to the directive definition and including the ngTransclude directive in the directive's template, Angular will replace the ngTranclude directive with the inner HTML of your directive.  The transcluded HTML will receive the scope of your directive's parent element.
+* Importing other apps into a module: If you have created an Angular app which you want to use in another Angular app, you can do so by simply including the app name in your module definition:
+    angular.module('myNewApp', ['myCoolReusableApp']);
+You can now use any directives, controllers or services in myCoolReusableApp.  This is also what is going on when you use libraries such as angular-animate.
 
 #React
 * this.setState(stateObj): Used to update the state of a component.  This will trigger a render() which will then update the display of the component if there are differences between the DOM and shadow DOM.
