@@ -14,6 +14,7 @@ Keeping track of programming knowledge that I pick up each day.
     * -diff (binary diff flag)
 * Git config: there are three places that git will look for a config file, ~/.gitconfig, $GIT_DIR/config, and $(prefix)/git/config.  The order of precedence goes from global to local so the config in your $GIT_DIR will take the highest precedence.  Git config files are not in a location that can be tracked and used automatically, this is for security reasons.  Each user of a repo will have to manually setup their config file or reference an example config that is tracked.
 * git reflog --oneline: This command will let you srr all of your git actions displayed concisely with their hash, head number, and description.  From there you can pick a specific point in time to revert to if you have dug yoursef into a hole.
+* --no-verify: Allows you to skip any client side git hooks you have added.  For instance if you have a hook to run unit tests bedore pushing, this will allow you to skip the tests.
 
 #Angular
 * ngStrictDi: Enforce strict dependency injection through array syntax in your Angular apps.  This is particularly useful for ensuring your code doesn't break under minification.  Usage:
