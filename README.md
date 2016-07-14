@@ -27,6 +27,7 @@ Keeping track of programming knowledge that I pick up each day.
 * Importing other apps into a module: If you have created an Angular app which you want to use in another Angular app, you can do so by simply including the app name in your module definition:
     angular.module('myNewApp', ['myCoolReusableApp']);
 You can now use any directives, controllers or services in myCoolReusableApp.  This is also what is going on when you use libraries such as angular-animate.
+* App initialization order: config, services/factories, controllers, links.
 
 #React
 * this.setState(stateObj): Used to update the state of a component.  This will trigger a render() which will then update the display of the component if there are differences between the DOM and shadow DOM.
