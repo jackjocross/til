@@ -99,6 +99,7 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
         height: calc(20% + 10px);
     }
 * css-modules: This npm package can be used to create locally scoped css and remove the need for systems like BEM that were needed to overcome the difficulties of CSS being globally scoped.  A set of styles can be included in your JavaScript component using "let styles = import './mystyles.css';".  Then in your tenplates the CSS class can be injected using "styles.myClassName".  css-modules will generate a unique class name for your component that will prevent naming conflicts.
+* attribute selectors: In CSS you can select HTML elements according the presenence of a certain attribute.  Elements can be selected solely based on presence ([attr]) or can be selected based on the value of the attribute ([attr=value]).  Elements can also be selected according to a matching function such as prefix ([attr^=value]) or suffix ([attr$=value]).
 
 #SASS
 * maps: Sass maps can be used to group together like properties and use getters to retrieve them.  Nested maps can also utilized by definining custom deep getter functions.  Example:
