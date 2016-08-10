@@ -102,6 +102,7 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
 * css-modules: This npm package can be used to create locally scoped css and remove the need for systems like BEM that were needed to overcome the difficulties of CSS being globally scoped.  A set of styles can be included in your JavaScript component using "let styles = import './mystyles.css';".  Then in your tenplates the CSS class can be injected using "styles.myClassName".  css-modules will generate a unique class name for your component that will prevent naming conflicts.
 * BEM: A CSS pattern which stands for block, element, modifier.  UI elements are split into blocks, elements within those blocks, and modifiers to represent conditional states.  Class names are then written block__element--modifier so that a minimal amount of nested stylings are used.  This can be useful to reduce the competition for specificity that can result from two nested styles competing for the same element.
 * > selector: This selector can be used like so: A > B {} and refers to any element B that is a child (direct descendant) of A.
+* @extend: A SASS mixin which allows you to create selectors which inherit from other selectors.  This can be useful to create more object oriented CSS and reduce the amount of code written.
 
 #SASS
 * maps: Sass maps can be used to group together like properties and use getters to retrieve them.  Nested maps can also utilized by definining custom deep getter functions.  Example:
