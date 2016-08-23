@@ -41,6 +41,10 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
     });
 * defaultProps: Allow you to declare default values for your component properties in case none are passed in.
 
+#Immutable
+* fromJS: Deeply creates an immutable object.
+* Map: Shallowly creates an immutable object.
+
 #Webpack
 * file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
 
