@@ -40,6 +40,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
         }
     });
 * defaultProps: Allow you to declare default values for your component properties in case none are passed in.
+* Reselect: A library that can be used with React in order to create memoized functions that can be used to create derived data.  This can increase the performance of your React application by preventing unnecessary rerenders and only performing expensive calculations when the state has actually changed.
 
 #Immutable
 * fromJS: Deeply creates an immutable object.
