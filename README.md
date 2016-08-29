@@ -70,6 +70,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 * sparse vs. dense arrays: Sparse arrays are arrays where some of the items in the array do not exist, eg. [1, , 2] or [, , ,].  Sparse arrays can be creared with the array constructor Array(3) and the nonexistent items are not iterable.  Dense arrays are arrays where all of the items exist eg. [1, 2, 3].  All of the items in a dense array are iterable.
 * Object.defineProperty(obj, prop, descriptor): This method can be used to define properties on the obj passed in which have specific characteristics according to the descriptor object.  For instance, passing in the descriptor {writable: false} will create a read-only property on the object.
 * arguments: An array-like object containing each function argument that is a local variable of each function.  It does not have array properties such as length or pop, but you can turn the arguments object into an array using Array.prototype.slice.call(arguments) or [...arguments].  You can also access the callee and caller of the function using arguments.callee and arguments.caller respectively.
+* typeof: Returns the type of a JavaScript variable as a string.  Possible types are string, number, object, undefined, null
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
