@@ -42,12 +42,17 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 * defaultProps: Allow you to declare default values for your component properties in case none are passed in.
 * Reselect: A library that can be used with React in order to create memoized functions that can be used to create derived data.  This can increase the performance of your React application by preventing unnecessary rerenders and only performing expensive calculations when the state has actually changed.
 
+#Redux
+* combineReducers: Combines multiple reducer functions into one so that you can more easily modularize your reducers and still pass in just the state object.
+
 #Immutable
 * fromJS: Deeply creates an immutable object.
 * Map: Shallowly creates an immutable object.
+* toJS: returns the native JavaScript version of the immutable object.
 
 #Webpack
 * file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
+* json-loader: A Webpack loader that should be included to load JSON files such as mocks into your bunde.
 
 #Node
 * nvm (Node version manager): can be used to easily switch between running different versions of Node and NPM for each shell window.  Use "nvm install ${version}" to install and use a specific Node version and "nvm use ${version}" to switch between available versions.  "nvm ls -remote" lists all Node versions available for download.
@@ -70,7 +75,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 * sparse vs. dense arrays: Sparse arrays are arrays where some of the items in the array do not exist, eg. [1, , 2] or [, , ,].  Sparse arrays can be creared with the array constructor Array(3) and the nonexistent items are not iterable.  Dense arrays are arrays where all of the items exist eg. [1, 2, 3].  All of the items in a dense array are iterable.
 * Object.defineProperty(obj, prop, descriptor): This method can be used to define properties on the obj passed in which have specific characteristics according to the descriptor object.  For instance, passing in the descriptor {writable: false} will create a read-only property on the object.
 * arguments: An array-like object containing each function argument that is a local variable of each function.  It does not have array properties such as length or pop, but you can turn the arguments object into an array using Array.prototype.slice.call(arguments) or [...arguments].  You can also access the callee and caller of the function using arguments.callee and arguments.caller respectively.
-* typeof: Returns the type of a JavaScript variable as a string.  Possible types are string, number, object, undefined, null
+* typeof: Returns the type of a JavaScript variable as a string.  Possible types are string, number, object, undefined, null, array
 
 ##ES6
 * Object Destructuring: in ES6 we no longer have to use dot notation to pull out the properties of an object that we want to use, instead we can do:
