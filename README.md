@@ -45,6 +45,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 
 #Redux
 * combineReducers: Combines multiple reducer functions into one so that you can more easily modularize your reducers and still pass in just the state object.
+* mapStateToProps: By passing in an object with props as keys and state mapping functions as values, redux will run the functions provided with state as the input and set the props to whatever the function returns.  This allows you to break your state into digestable props that your component can use.
 
 #Immutable
 * fromJS: Deeply creates an immutable object.
