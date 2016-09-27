@@ -101,8 +101,8 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
     for (let item of x.entries()) {
         console.log(item)
     }
-* import: Used to include dependencies from other JavaScript files.  If you use { specificObject } after import you will receive what was exported as specificObject.  Otherwise if you do not use brackets you will receive whatever was exported using default.
-* export: Used to make code accessible as a dependency to other JavaScript files.  If the default keyword is used the object will be the default export.  Otherwise the object will have to be referenced by name in the import.
+* import: Used to include dependencies from other JavaScript files.  If you use { specificObject } after import you will receive what was exported as specificObject.  Otherwise if you do not use brackets you will receive whatever was exported using default.  import * as myMod from './someFile' will import everything including the default export from someFile.
+* export: Used to make code accessible as a dependency to other JavaScript files.  If the default keyword is used the object will be the default export.  Otherwise the object will have to be referenced by name in the import.  export * from './someFile' will export everything except the default function of someFile.
 * get/set: If get and set functions are defined for properties of a class, those functions will be used when accessing or assigning the variable.
 
 #NPM
