@@ -54,11 +54,12 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 #Immutable
 * fromJS: Deeply creates an immutable object.
 * Map: Shallowly creates an immutable object.
-* toJS: returns the native JavaScript version of the immutable object.
+* toJS: returns the native JavaScript version of the immutable object.  Always returns a reference to a new object.
 
 #Webpack
 * file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
 * json-loader: A Webpack loader that should be included to load JSON files such as mocks into your bunde.
+* Hot module reloading: This feature of webpack can save you a page reload when viewing changes in certain scenarios.  To start webpack-dev-server with hmr enabled add the flags --inline --hot when you start the server.
 
 #Node
 * nvm (Node version manager): can be used to easily switch between running different versions of Node and NPM for each shell window.  Use "nvm install ${version}" to install and use a specific Node version and "nvm use ${version}" to switch between available versions.  "nvm ls -remote" lists all Node versions available for download.
