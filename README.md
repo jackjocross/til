@@ -41,6 +41,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
     });
 * defaultProps: Allow you to declare default values for your component properties in case none are passed in.
 * context: Any react component can access the context of its parents as long as it defines contectTypes.  Context can be used to give child components access to data without having to explicitly pass the data as props.  Context should be used sparingly though as its much harder to follow your applications data flow than if you just use props.
+* children: This prop will be passed to a component if you define it or if you include any JSX within the components opening and closing tags.  This can be used to make container components reusable by just swapping out the children they render.
 
 #Reselect
 * A library that can be used with React in order to create memoized functions that can be used to create derived data.  This can increase the performance of your React application by preventing unnecessary rerenders and only performing expensive calculations when the state has actually changed.
