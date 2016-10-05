@@ -61,6 +61,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 * file-loader: A Webpack loader that can be used to include static asset files such as images or fonts in your bundle.
 * json-loader: A Webpack loader that should be included to load JSON files such as mocks into your bunde.
 * Hot module reloading: This feature of webpack can save you a page reload when viewing changes in certain scenarios.  To start webpack-dev-server with hmr enabled add the flags --inline --hot when you start the server.
+* webpack-dev-server: Can be used to serve up your weback bundle in your local development environment using an express server.  
 
 #Node
 * nvm (Node version manager): can be used to easily switch between running different versions of Node and NPM for each shell window.  Use "nvm install ${version}" to install and use a specific Node version and "nvm use ${version}" to switch between available versions.  "nvm ls -remote" lists all Node versions available for download.
