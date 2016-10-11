@@ -66,6 +66,9 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 #Node
 * nvm (Node version manager): can be used to easily switch between running different versions of Node and NPM for each shell window.  Use "nvm install ${version}" to install and use a specific Node version and "nvm use ${version}" to switch between available versions.  "nvm ls -remote" lists all Node versions available for download.
 
+#Express
+app.get: The get function allows you to define GET endpoints for your server to serve up static content or run a callback function.
+
 #JavaScript
 * bind(context, ...args): Applied to a function, sets the functions "this" to be equal to context.  Prepends ...args as arguments to the function when it is called.  Usage:
     * myFunction.bind(null, "myParam")
