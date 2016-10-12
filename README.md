@@ -65,6 +65,8 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 
 #Node
 * nvm (Node version manager): can be used to easily switch between running different versions of Node and NPM for each shell window.  Use "nvm install ${version}" to install and use a specific Node version and "nvm use ${version}" to switch between available versions.  "nvm ls -remote" lists all Node versions available for download.
+* fs.readdir: Given a path, will return an array of the file and folder names in that path.  fs.readdirSync is the synchronous version.
+* fs.readFile: Given a path to a file, will return the contents of the file as a string.  fs.readFileSync is the synchronous version.
 
 #Express
 app.get: The get function allows you to define GET endpoints for your server to serve up static content or run a callback function.
