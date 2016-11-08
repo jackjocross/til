@@ -117,6 +117,9 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
 ##ES7
 * async/await: Using async functions and the await keyword are another way to manage asynchronous code in JavaScript.  let x = await getSomeData(); will wait to execute the rest of the function until the promise returned by getSomeData resolves.  Any functions that contain the await keyword must also be defined as async functions.  It is also good practice to wrap your async functions in try/catch blocks in order to catch any promise rejections, otherwise the promise will fail silently.
 
+#Babel
+* babel-polyfill vs. babel-runtime: Both of these dependencies work to create a full ES6 environment for your code base, but in different ways.  babel-polyfill does so by declaring globals and overwriting prototypes while babel-runtime does so by referencing ES6 functions from fhe babel-runtime package.  babel-polyfill is good to use for your application as it will work with instance methods, but babel-runtime is good to use with a library so that you avoid polluting the global namespace.
+
 #NPM
 *shrinkwrap: Run using "npm shrinkwrap --dev".  This will create a npm-shrinkwrap.json file which will be used to resolve all of the npm dependencies and sub-dependencies in your package.json.  This can prevent unwanted and breaking updates to packages that can come through the use of the ~, ^, and * modifiers in your package.json and the package.json of any of your dependencies.
 *import: When importing an NPM package into your code, the import will try to resolve to index.js in the packages root folder or to the main script provided in the package.json.  Additionally you can refer to paths within a package such as lodash/isNull which will resolve to the isNull file or folder in the packages root.
