@@ -114,6 +114,9 @@ This syntax is much more concise and gives us a simple way to clean up code.  Ob
 * export: Used to make code accessible as a dependency to other JavaScript files.  If the default keyword is used the object will be the default export.  Otherwise the object will have to be referenced by name in the import.  export * from './someFile' will export everything except the default function of someFile.
 * get/set: If get and set functions are defined for properties of a class, those functions will be used when accessing or assigning the variable.
 
+##ES7
+* async/await: Using async functions and the await keyword are another way to manage asynchronous code in JavaScript.  let x = await getSomeData(); will wait to execute the rest of the function until the promise returned by getSomeData resolves.  Any functions that contain the await keyword must also be defined as async functions.  It is also good practice to wrap your async functions in try/catch blocks in order to catch any promise rejections, otherwise the promise will fail silently.
+
 #NPM
 *shrinkwrap: Run using "npm shrinkwrap --dev".  This will create a npm-shrinkwrap.json file which will be used to resolve all of the npm dependencies and sub-dependencies in your package.json.  This can prevent unwanted and breaking updates to packages that can come through the use of the ~, ^, and * modifiers in your package.json and the package.json of any of your dependencies.
 *import: When importing an NPM package into your code, the import will try to resolve to index.js in the packages root folder or to the main script provided in the package.json.  Additionally you can refer to paths within a package such as lodash/isNull which will resolve to the isNull file or folder in the packages root.
