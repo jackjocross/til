@@ -68,6 +68,7 @@ You can now use any directives, controllers or services in myCoolReusableApp.  T
 * fs.readdir: Given a path, will return an array of the file and folder names in that path.  fs.readdirSync is the synchronous version.
 * fs.readFile: Given a path to a file, will return the contents of the file as a string.  fs.readFileSync is the synchronous version.
 * fs.stat, fs.lstat, fs.fstat: These node fs functions mirror the linux commands which return information about a file.  fs.lstat will return the stat on a symbolic link rather than following the link and fs.fstat will look for the file using a file descriptor.
+* require: Used to import a module from another file given a node module name or a file path.  Note that require caches what it returns so it should not be used to read in JSON files if a fresh version is needed.
 
 #Express
 app.get: The get function allows you to define GET endpoints for your server to serve up static content or run a callback function.
